@@ -20,6 +20,7 @@ convert.utils.delDir(imgDir);
 console.log('convert folder: ', __dirname + '/img');
 
 const cwebpOpts = {
+    quiet: '', // 不输出详情
     q: 60 // 质量
 };
 

@@ -47,6 +47,7 @@ console.log('total: ', res);
 // 示例二: 生成 img 目录下的 webp 文件至 output/webp 目录，附带质量等参数
 // 更多参数参考：https://developers.google.com/speed/webp/docs/cwebp?csw=1#options
 const cwebpOpts = {
+    quiet: '', // 不输出详情
     q: 60 // 质量
 };
 // 清空输出目录
