@@ -1,0 +1,40 @@
+{
+  "name": "webp-batch-convert",
+  "version": "0.0.1",
+  "description": "webp 图片批量转换。将 png/jpg/bmp 格式的图片批量转换为 webp 格式。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzwme/webp-batch-convert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lzwme/webp-batch-convert/issues"
+  },
+  "main": "index.js",
+  "keywords": [
+    "webp",
+    "cwebp",
+    "webp node"
+  ],
+  "author": {
+    "name": "lzwme",
+    "url": "https://lzw.me"
+  },
+  "maintainers": [
+    {
+      "name": "renxia",
+      "url": "https://lzw.me"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://lzw.me/pages/demo/webp-batch-convert",
+  "engines": {
+    "node": ">= 6.9.1"
+  },
+  "scripts": {
+    "test": "node test/cwebp",
+  },
+  "dependencies": {
+    "cwebp-bin": "^3.2.0"
+  },
+  "devDependencies": {}
+}
