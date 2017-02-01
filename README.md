@@ -54,7 +54,7 @@ console.log('total: ', res);
 ```
 
 <p align="center">
-    <img src="https://cdn.rawgit.com/lzwme/webp-batch-convert/master/test/img/share.jpg">
+    <img src="https://cdn.rawgit.com/lzwme/webp-batch-convert/master/test/img/snapshot.png">
 </p>
 ### 使用示例(命令行方式)
 
