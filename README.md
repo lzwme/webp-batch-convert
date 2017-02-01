@@ -53,10 +53,6 @@ console.log('total: ', res);
 
 ## 命令行方式使用(cwebp-batch)
 
-<p align="center">
-    <img src="https://cdn.rawgit.com/lzwme/webp-batch-convert/master/test/img/snapshot.png">
-</p>
-
 ### 全局安装
 
 ```js
@@ -72,20 +68,42 @@ cwebp-batch --in img-folder --out webp-folder <-q 75 -quiet>
 ```js
 ./node_modules/.bin/cwebp-batch --in img-folder --out webp-folder <-q 75 -quiet>
 ```
-
+<p align="center">
+    <img src="https://cdn.rawgit.com/lzwme/webp-batch-convert/master/test/img/snapshot.png">
+</p>
 ## API
 
 - `.cwebp(imgDir, webpDir, cwebpOptions)`
 
-批量生成 webp。
+批量转换生成 webp。示例：
+```js
+// 将 img 目录下的所有图片转换为 webp 文件，输出至 webp 目录
+const res = convert.cwebp('./img','./webp', {
+    quiet: true, // 不输出详情
+    q: 60        // 质量
+});
+console.log('total: ' + res);
+```
 
 - `.utils.mkDir(dirPath)`
 
-创建一个(深度的)目录
+创建一个(深度的)目录。示例：
+```js
+// 创建目录
+convert.utils.mkDir('./src/assets/webp');
+```
 
-- `.utils.delDir(dirPath)`
+- `.utils.delDir(dirPath, ext)`
 
-清空一个（非空的）目录
+清空一个（非空的）目录。示例：
+```js
+// 删除 webp 目录
+convert.utils.delDir('./webp');
+// 删除 webp 目录下的所有 webp 后缀的文件
+convert.utils.delDir('./webp', 'webp');
+// 删除 webp 目录下的所有 .webp 后缀的文件
+convert.utils.delDir('./webp', /\.webp$/);
+```
 
 ## 二次开发
 
