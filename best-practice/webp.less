@@ -1,0 +1,12 @@
+// 应在相同路径下生成同名的 webp 文件
+// less 源码：
+// .ava { .webBg('../img/test', 'png'); }
+// 编译输出：
+// .ava { background-image:url('../img/test.jpg'); }
+// .webps .ava { background-image:url('../img/test.webp'); }
+.webpBg(@path, @ext: 'png') {
+    background-image: url('@{path}.@{ext}');
+    .webps & {
+        background-image: url('@{path}.webp');
+    }
+}

@@ -1,0 +1,11 @@
+// scss 源码：
+// .ava { @include webpBg('../img/test', 'jpg'); }
+// 编译输出为：
+// .ava { background-image:url('../img/test.jpg'); }
+// .webps .ava { background-image:url('../img/test.webp'); }
+ @mixin webpBg($path, $ext) {
+    background-image: url($path + '.' + $ext);
+    @at-root(with: all) .webps & {
+        background-image: url($path + '.webp');
+    }
+}
