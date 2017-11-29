@@ -3,7 +3,7 @@
 
     // 添加 webp 支持标识
     function addSupportWebp() {
-        doc.documentElement.className += 'webps';
+        doc.documentElement.className += ' webps';
         window._webps = 'A'; // 用于全局对象引用
         if (stor) {
             stor._webps = 'A';
