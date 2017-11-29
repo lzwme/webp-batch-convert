@@ -3,7 +3,7 @@
 
 Webp Batch Convert
 ========
-webp 图片批量转换。将 png/jpg/bmp 格式的图片批量转换为 webp 格式。
+webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图片批量转换为 webp 格式。
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](https://gruntjs.com/)
 [![NPM version][npm-image]][npm-url]
