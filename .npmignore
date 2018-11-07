@@ -3,3 +3,5 @@ test
 publish.bat
 .eslintrc
 yarn.lock
+package-lock.json
+output
