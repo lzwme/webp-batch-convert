@@ -7,7 +7,6 @@ webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图�
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](https://gruntjs.com/)
 [![NPM version][npm-image]][npm-url]
-[![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
