@@ -5,7 +5,6 @@ Webp Batch Convert
 ========
 webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图片批量转换为 webp 格式。
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](https://gruntjs.com/)
 [![NPM version][npm-image]][npm-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
@@ -70,6 +69,7 @@ cwebp-batch --in img-folder --out webp-folder <-q 75 -quiet>
 <p align="center">
     <img src="https://cdn.rawgit.com/lzwme/webp-batch-convert/master/test/img/snapshot.png">
 </p>
+
 ## API
 
 - `.cwebp(imgDir, webpDir, cwebpOptions)`
