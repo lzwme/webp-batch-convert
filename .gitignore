@@ -3,3 +3,4 @@ npm-debug.log
 test_screenshots/*
 output
 package-lock.json
+yarn.lock
