@@ -8,15 +8,25 @@ webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图�
 [![NPM version][npm-image]][npm-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
+[![GitHub issues][issues-img]][issues-url]
+[![GitHub forks][forks-img]][forks-url]
+[![GitHub stars][stars-img]][stars-url]
+[![minzipped size][bundlephobia-img]][bundlephobia-url]
 
+[stars-img]: https://img.shields.io/github/stars/lzwme/webp-batch-convert.svg
+[stars-url]: https://github.com/lzwme/webp-batch-convert/stargazers
+[forks-img]: https://img.shields.io/github/forks/lzwme/webp-batch-convert.svg
+[forks-url]: https://github.com/lzwme/webp-batch-convert/network
+[issues-img]: https://img.shields.io/github/issues/lzwme/webp-batch-convert.svg
+[issues-url]: https://github.com/lzwme/webp-batch-convert/issues
 [npm-image]: https://img.shields.io/npm/v/webp-batch-convert.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/webp-batch-convert
-[gemnasium-image]: https://img.shields.io/gemnasium/lzwme/webp-batch-convert.svg?style=flat-square
-[gemnasium-url]: https://gemnasium.com/lzwme/webp-batch-convert
-[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_10.9.0-green.svg?style=flat-square
 [node-url]: https://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/webp-batch-convert.svg?style=flat-square
 [download-url]: https://npmjs.org/package/webp-batch-convert
+[bundlephobia-url]: https://bundlephobia.com/result?p=webp-batch-convert@latest
+[bundlephobia-img]: https://badgen.net/bundlephobia/minzip/webp-batch-convert@latest
 
 ## 快速上手
 

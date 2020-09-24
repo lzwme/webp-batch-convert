@@ -1,6 +1,6 @@
 {
   "name": "webp-batch-convert",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图片批量转换为 webp 格式。",
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     "test": "node test/cwebp"
   },
   "dependencies": {
-    "cwebp-bin": "^5.1.0",
-    "minimist": "^1.2.0"
+    "cwebp-bin": "^6.1.1",
+    "minimist": "^1.2.5"
   }
 }
