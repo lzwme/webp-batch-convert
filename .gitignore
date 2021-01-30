@@ -4,3 +4,4 @@ test_screenshots/*
 output
 package-lock.json
 yarn.lock
+test
