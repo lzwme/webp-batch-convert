@@ -27,7 +27,7 @@ function formatArgv() {
     let i = 4;
     let key;
 
-    for (;i < len; i++) {
+    for (; i < len; i++) {
         if (0 === argv[i].indexOf('-')) {
             key = argv[i].split('-')[1];
             options[key] = '';

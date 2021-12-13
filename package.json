@@ -16,7 +16,8 @@
   "keywords": [
     "webp",
     "cwebp",
-    "webp node"
+    "batch",
+    "node"
   ],
   "author": {
     "name": "lzwme",
@@ -30,7 +31,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=6"
+    "node": ">=12"
   },
   "scripts": {
     "test": "node test/cwebp"

@@ -1,4 +1,3 @@
-[![Code Climate](https://lzw.me/images/logo.png)](https://lzw.me)
 [![webp-batch-convert](https://nodei.co/npm/webp-batch-convert.png)](https://npmjs.org/package/webp-batch-convert)
 
 Webp Batch Convert
@@ -21,7 +20,7 @@ webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图�
 [issues-url]: https://github.com/lzwme/webp-batch-convert/issues
 [npm-image]: https://img.shields.io/npm/v/webp-batch-convert.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/webp-batch-convert
-[node-image]: https://img.shields.io/badge/node.js-%3E=_10.9.0-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_12-green.svg?style=flat-square
 [node-url]: https://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/webp-batch-convert.svg?style=flat-square
 [download-url]: https://npmjs.org/package/webp-batch-convert
@@ -69,6 +68,10 @@ convert.utils.delDir('./webp');
 res = convert.cwebp('./img','./webp', cwebpOpts);
 console.log('total: ', res);
 ```
+
+### `best-practice`
+
+- [https://github.com/lzwme/webp-batch-convert/tree/master/best-practice](https://github.com/lzwme/webp-batch-convert/tree/master/best-practice)
 
 ## 命令行方式使用(cwebp-batch)
 
