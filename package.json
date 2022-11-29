@@ -9,7 +9,7 @@
     "bugs": {
         "url": "https://github.com/lzwme/webp-batch-convert/issues"
     },
-    "main": "index.js",
+    "main": "lib/index.js",
     "bin": {
         "cwebp-batch": "bin/cwebp-batch.js"
     },

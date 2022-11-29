@@ -4,7 +4,7 @@
 
 const { readFileSync, mkdirSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
-const convert = require('../');
+const convert = require('../lib');
 const imgDir = './output/';
 let res;
 
