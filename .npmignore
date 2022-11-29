@@ -1,9 +1,0 @@
-test
-.gitignore
-.editorconfig
-publish.bat
-.eslintrc
-yarn.lock
-package-lock.json
-output
-best-practice

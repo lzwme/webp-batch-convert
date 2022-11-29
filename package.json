@@ -1,43 +1,51 @@
 {
-  "name": "webp-batch-convert",
-  "version": "0.1.2",
-  "description": "webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图片批量转换为 webp 格式。",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lzwme/webp-batch-convert.git"
-  },
-  "bugs": {
-    "url": "https://github.com/lzwme/webp-batch-convert/issues"
-  },
-  "main": "index.js",
-  "bin": {
-    "cwebp-batch": "bin/cwebp-batch.js"
-  },
-  "keywords": [
-    "webp",
-    "cwebp",
-    "batch",
-    "node"
-  ],
-  "author": {
-    "name": "lzwme",
-    "url": "https://lzw.me"
-  },
-  "maintainers": [
-    {
-      "name": "renxia",
-      "url": "https://lzw.me"
+    "name": "webp-batch-convert",
+    "version": "0.1.2",
+    "description": "webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图片批量转换为 webp 格式。",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lzwme/webp-batch-convert.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lzwme/webp-batch-convert/issues"
+    },
+    "main": "index.js",
+    "bin": {
+        "cwebp-batch": "bin/cwebp-batch.js"
+    },
+    "keywords": [
+        "webp",
+        "cwebp",
+        "batch",
+        "node"
+    ],
+    "author": {
+        "name": "lzwme",
+        "url": "https://lzw.me"
+    },
+    "maintainers": [
+        {
+            "name": "renxia",
+            "url": "https://lzw.me"
+        }
+    ],
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.com"
+    },
+    "files": [
+        "lib",
+        "bin"
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=12"
+    },
+    "scripts": {
+        "test": "node test/cwebp"
+    },
+    "dependencies": {
+        "cwebp-bin": "^6.1.2",
+        "minimist": "^1.2.7"
     }
-  ],
-  "license": "MIT",
-  "engines": {
-    "node": ">=12"
-  },
-  "scripts": {
-    "test": "node test/cwebp"
-  },
-  "dependencies": {
-    "cwebp-bin": "^6.1.2",
-    "minimist": "^1.2.5"
-  }
 }
