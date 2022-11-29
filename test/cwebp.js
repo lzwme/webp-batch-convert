@@ -2,7 +2,7 @@
  * cwebp test
  */
 
-const { readFileSync, fstat, mkdirSync, writeFileSync } = require('fs');
+const { readFileSync, mkdirSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 const convert = require('../');
 const imgDir = './output/';
