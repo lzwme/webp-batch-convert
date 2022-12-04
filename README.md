@@ -33,6 +33,7 @@ webp 图片批量转换。将指定目录内 png/jpg/jpeg/bmp/gif 格式的图�
 
 ```bash
 npm install --save-dev webp-batch-convert
+npm exec wbc -h
 ```
 
 ### 使用示例(nodejs 模块 API 方式)
@@ -43,7 +44,7 @@ const convert = require('webp-batch-convert');
 let res;
 
 // 示例一: 生成 img 目录下的图片文件至 webp 目录
-res = convert.cwebp('./img', './webp');
+res = await convert.cwebp('./img', './webp');
 console.log('total: ', res);
 
 // 示例二: 生成 img 目录下的图片文件至 webp 目录，附带质量等参数
@@ -63,9 +64,9 @@ const cwebpOpts = {
     /** use simple filter instead of strong */
     nostrong: false,
 };
-// 清空输出目录
+// 先清空输出目录
 convert.utils.delDir('./webp');
-res = convert.cwebp('./img','./webp', cwebpOpts);
+res = await convert.cwebp('./img','./webp', cwebpOpts);
 console.log('total: ', res);
 ```
 
@@ -73,23 +74,35 @@ console.log('total: ', res);
 
 - [https://github.com/lzwme/webp-batch-convert/tree/master/best-practice](https://github.com/lzwme/webp-batch-convert/tree/master/best-practice)
 
-## 命令行方式使用(cwebp-batch)
+## 命令行方式使用(wbc / cwebp-batch)
 
 ### 全局安装
 
-```js
+```bash
 npm install -g webp-batch-convert
+wbc -h
+# or 
+cwebp-batch -h
+```
+
+也可以不安装，使用 `npx` 执行：
+
+```bash
+npx webp-batch-convert -h
 ```
 
 ### 使用示例
 
 ```js
-cwebp-batch --in img-folder --out webp-folder <-q 75 -quiet>
+wbc --in img-folder --out webp-folder <--debug --q 75>
 ```
+
 或者局部安装，然后如下方式使用：
+
 ```js
-./node_modules/.bin/cwebp-batch --in img-folder --out webp-folder <-q 75 -quiet>
+./node_modules/.bin/wbc --in img-folder --out webp-folder <-D -q 75>
 ```
+
 <p align="center">
     <img src="https://cdn.rawgit.com/lzwme/webp-batch-convert/master/test/img/snapshot.png">
 </p>
@@ -101,11 +114,11 @@ cwebp-batch --in img-folder --out webp-folder <-q 75 -quiet>
 批量转换生成 webp。示例：
 ```js
 // 将 img 目录下的所有图片转换为 webp 文件，输出至 webp 目录
-const res = convert.cwebp('./img','./webp', {
-    quiet: true, // 不输出详情
+const res = await convert.cwebp('./img','./webp', {
+    debug: true,
     q: 60        // 质量
 });
-console.log('total: ' + res);
+console.log('result: ' + res);
 ```
 
 - `.utils.mkDir(dirPath)`
@@ -124,16 +137,16 @@ convert.utils.mkDir('./src/assets/webp');
 convert.utils.delDir('./webp');
 // 删除 webp 目录下的所有 webp 后缀的文件
 convert.utils.delDir('./webp', 'webp');
-// 删除 webp 目录下的所有 .webp 后缀的文件
-convert.utils.delDir('./webp', /\.webp$/);
+// 删除 webp 目录下的所有 .webp、png 后缀的文件
+convert.utils.delDir('./webp', /\.(webp|png)$/);
 ```
 
 ## 二次开发
 
-- 依赖安装 `yarn install`
+- 依赖安装 `pnpm install`
 - 修改/新增功能
-- 添加测试并执行 `yarn test`
-- `cwebp-batch` 命令行命令全局安装与测试 `npm i -g ./`
+- 添加测试并执行 `pnpm test`
+- 全局安装与测试 `npm link . && wbc -h`
 
 ## License
 

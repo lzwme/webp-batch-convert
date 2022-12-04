@@ -1,0 +1,19 @@
+# dist filter
+cjs/cli.d.ts
+esm/cli.d.ts
+cjs/type.js
+esm/type.js
+
+# config
+/tsconfig.*
+/.*
+
+# dirs
+/typings
+/test
+/output
+/tmp
+/cache
+/lib
+/src
+/best-practice

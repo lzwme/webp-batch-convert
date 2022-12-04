@@ -9,9 +9,32 @@
     "bugs": {
         "url": "https://github.com/lzwme/webp-batch-convert/issues"
     },
-    "main": "lib/index.js",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "typings": "cjs/index.d.ts",
+  "license": "MIT",
+    "scripts": {
+        "test-e": "node test/cwebp",
+        "dev": "npm run watch:build",
+        "start": "npm run watch",
+        "build": "npm run clean && npm run build:cjs && npm run build:esm",
+        "build:cjs": "tsc -p tsconfig.cjs.json",
+        "build:esm": "tsc -p tsconfig.module.json",
+        "fix": "npm run fix:prettier",
+        "fix:prettier": "prettier \"src/**/*.ts\" --write",
+        "test": "npm run test:prettier",
+        "test:prettier": "prettier \"src/**/*.ts\" --list-different",
+        "watch": "npm run clean && npm run build:cjs -- -w",
+        "watch:build": "tsc -p tsconfig.cjs.json -w",
+        "version": "standard-version",
+        "dist": "npm run test && npm run build",
+        "release": "npm run dist",
+        "release-version": "npm run dist && npm run version",
+        "clean": "flh rm -f ./cjs ./esm ./docs"
+    },
     "bin": {
-        "cwebp-batch": "bin/cwebp-batch.js"
+        "cwebp-batch": "bin/wbc.js",
+        "wbc": "bin/wbc.js"
     },
     "keywords": [
         "webp",
@@ -33,19 +56,18 @@
         "access": "public",
         "registry": "https://registry.npmjs.com"
     },
-    "files": [
-        "lib",
-        "bin"
-    ],
-    "license": "MIT",
     "engines": {
         "node": ">=12"
     },
-    "scripts": {
-        "test": "node test/cwebp"
-    },
     "dependencies": {
-        "cwebp-bin": "^6.1.2",
-        "minimist": "^1.2.7"
+        "commander": "^9.4.1",
+        "cwebp-bin": "^8.0.0",
+        "fast-glob": "^3.2.12"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.10",
+        "prettier": "^2.8.0",
+        "standard-version": "^9.5.0",
+        "typescript": "^4.9.3"
     }
 }
