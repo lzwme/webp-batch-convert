@@ -30,7 +30,7 @@ export async function cwebp(src: string, dest: string, options: WBCOptions) {
   const startTime = Date.now();
   const result = { total: 0, exist: 0, converted: 0, timecost: 0 };
 
-    if (!src || !dest) {
+  if (!src || !dest) {
     console.error('请指定 src 和 dest 参数');
     return result;
   }

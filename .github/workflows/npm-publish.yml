@@ -24,7 +24,7 @@ jobs:
           # cache: 'pnpm'
       # - run: pnpm install --no-frozen-lockfile
       # - run: npm run test
-      # - run: npm run release
+      - run: npm run dist
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
